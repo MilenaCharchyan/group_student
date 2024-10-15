@@ -1,0 +1,15 @@
+.menu {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  .nav>a{
+    &.active{
+        font-weight: 600;
+        // text-shadow: 1px 1px 2px #333;
+        border-bottom: 1px solid #000;
+        border-radius: 4px;
+    }
+  }
+
+}

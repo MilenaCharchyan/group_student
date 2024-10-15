@@ -1,0 +1,132 @@
+.group{
+    padding: 10px;
+}
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ReactModal__Content {
+    min-width: 500px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    height: 500px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.group-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    thead {
+        background-color: #4b5d71;
+        color: #fff;
+
+        tr th {
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+    }
+
+    tbody {
+        tr {
+            &:nth-of-type(even) {
+                background-color: #f2f2f2;
+            }
+
+            td {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                text-align: left;
+
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+// Button styling
+button {
+    background-color: #4b5d71;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #4b5d71;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.delete-btn {
+        background-color: #e74c3c;
+
+        &:hover {
+            background-color: #c0392b;
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .error {
+        color: #e74c3c;
+        font-size: 0.875rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+}
+
+.students-list {
+    margin-top: 15px;
+    text-align: left;
+    height: 80%;
+    border: 1px solid;
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            .delete-btn {
+                margin-left: 10px;
+            }
+        }
+    }
+
+    p {
+        font-style: italic;
+        color: #666;
+    }
+}

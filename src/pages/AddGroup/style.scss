@@ -1,0 +1,64 @@
+// style.scss
+
+.add-group-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 50px;
+
+    h4 {
+        margin-bottom: 20px;
+        color: #333;
+        font-size: 1.5rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        transition: border-color 0.3s ease;
+
+        &:focus {
+            border-color: #4b5d71;
+            outline: none;
+        }
+    }
+
+    .error {
+        color: #36577c;
+        font-size: 0.875rem;
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .add-group-btn {
+        background-color: #4b5d71;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #24374d;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
